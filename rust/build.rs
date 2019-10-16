@@ -4,6 +4,9 @@ use cc::Build;
 fn main() {
     let mut build = Build::new();
 
+    // no warns
+    build.flag("-w");
+
     // define platform first
     #[cfg(target_os="macos")]
     build.define("_GLFW_COCOA", Some("1"));

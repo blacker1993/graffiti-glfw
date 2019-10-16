@@ -1,4 +1,4 @@
-use libc::{c_void, c_int, c_uint, c_char, c_double};
+use std::os::raw::{c_void, c_int, c_uint, c_char, c_double};
 
 // (emscripten does not need it)
 #[cfg(not(target_arch = "wasm32"))]

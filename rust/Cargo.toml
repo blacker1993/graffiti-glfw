@@ -1,5 +1,4 @@
 [package]
-# TODO: rename (this one is taken)
 name = "graffiti-glfw"
 version = "3.3.0"
 edition = "2018"
@@ -7,9 +6,6 @@ build = "build.rs"
 
 [lib]
 path = "lib.rs"
-
-[dependencies]
-libc = "*"
 
 [build-dependencies]
 cc = "1"
