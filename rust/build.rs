@@ -20,7 +20,7 @@ fn main() {
         .file("../src/init.c")
         .file("../src/input.c")
         .file("../src/monitor.c")
-        //.file("../src/vulkan.c")
+        .file("../src/vulkan.c")
         .file("../src/window.c")
     ;
 
