@@ -53,7 +53,8 @@ extern "C" {
     pub fn glfwSetFramebufferSizeCallback(window: *mut GlfwWindow, cbfun: unsafe extern "C" fn (*mut GlfwWindow, c_int, c_int));
     pub fn glfwSetWindowCloseCallback(window: *mut GlfwWindow, cbfun: unsafe extern "C" fn(*mut GlfwWindow));
     pub fn glfwPollEvents();
-    pub fn glfwWaitEventsTimeout(timeout: f32);
+    pub fn glfwWaitEvents();
+    pub fn glfwWaitEventsTimeout(timeout: f64);
 
     pub fn glfwSwapBuffers(window: *mut GlfwWindow);
 }
